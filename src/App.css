@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .working {
-  width: 90%;
-  height: 90vh;
+ 
 }
 
 .WOrkingTxt {
@@ -13,7 +15,6 @@
   width: 150px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 *,
 *:before,
@@ -26,8 +27,9 @@
 
 .custom-header {
   background-color: rgba(255, 255, 255, 0.228);
+  /* background-color: rgb(255 255 255 / 38%); */
   backdrop-filter: blur(20px);
-  padding: 1rem 2rem;
+  padding: 4px 2px 4px;
   position: absolute;
   z-index: 99;
   top: 0;
@@ -62,13 +64,14 @@ ul {
 .custom-fullscreen {
   clip-path: circle(0% at 96.5% 4%);
   position: absolute;
-  background: #000000;
+  background: #5F81FD;
   width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
-  transition: all 0.5s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+  transition: all 0.5 cubic-bezier(0.23, 0.93, 0.23, 0.93);
 }
+
 
 .custom-fullscreen ul {
   display: flex;
@@ -83,10 +86,11 @@ ul {
 }
 
 .custom-fullscreen li a {
-  font-size: 1.5rem;
+  font-size: 30px !important;
+  text-decoration: none I !important;
   background: -webkit-linear-gradient(45deg, rgba(182, 143, 213, 1) 0%, rgba(255, 174, 174, 0.685) 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #2D3792;
 }
 
 .custom-fullscreen .custom-close {
@@ -122,7 +126,7 @@ ul {
 
 .custom-fullscreen.custom-active {
   clip-path: circle(140% at 96.5% 4%);
-  transition: all 0.7s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+  transition: all 2s cubic-bezier(0.23, 0.93, 0.23, 0.93);
 }
 
 .custom-fullscreen.custom-active ul>li {
@@ -132,7 +136,7 @@ ul {
 .custom-fullscreen.custom-reverse_anim {
   clip-path: circle(0% at 96.5% 4%);
   opacity: 0.6;
-  transition: all 0.4s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+  transition: all 1.4s cubic-bezier(0.23, 0.93, 0.23, 0.93);
 }
 
 @keyframes custom-animateIn {
@@ -146,8 +150,389 @@ ul {
   }
 }
 
+.Home_first {
+padding-top: 100px;
+padding-bottom:  100px;
+  background: url("./assets/Bgmain.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 
 .homeimg {
   width: 100%;
   height: 100vh;
 }
+
+.LaptopImg {
+  width: 100%;
+  animation: bobbingAnim 2s infinite;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+@keyframes bobbingAnim {
+  0% {
+    transform: translate(0px, 0px);
+    animation-timing-function: ease-in-out
+  }
+
+  50% {
+    transform: translate(0px, 12px);
+    animation-timing-function: ease-in-out
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    animation-timing-function: ease-in-out
+  }
+}
+
+.headHomeTxt h3 {
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  color: #fff;
+}
+
+.headHomeTxt h4 {
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #fff;
+}
+
+.txt-grad {
+  /* text-decoration: underline; */
+  color: white;
+  font-style: italic;
+  font-family: "Poppins";
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  outline: none;
+  animation: animate 5s linear infinite;
+  -webkit-animation: animate 5s linear infinite;
+
+}
+
+@keyframes animate {
+
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60.1%,
+  80%,
+  90.1%,
+  92.5% {
+    color: #fff;
+    text-shadow: none;
+  }
+
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60%,
+  80.1%,
+  90%,
+  93%,
+  100% {
+    color: white;
+    text-shadow: 0 1px 10px #83bcf4,
+      0 0 0px #E830FF,
+      0 0 6px #E830FF,
+      0 0 06px #E830FF,
+      0 0 16px #E830FF;
+  }
+}
+
+/* From Uiverse.io by david-mohseni */
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  justify-content: start;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #2d37925d;
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;
+  background: #2D3792;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+}
+
+
+
+.Profile {
+  width: 342px;
+  background: rgba(255, 255, 255, 0.38);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  padding: 30px
+}
+
+.ProfilePic {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.Profileinfo h5 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+  line-height: 26px;
+}
+
+.Profileinfo h4 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Poppins";
+  line-height: 40px;
+
+}
+
+.profileicons {
+  width: 16px !important;
+  height: 16px;
+}
+
+.profilemoredetails {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+}
+
+.secdProf {
+  margin-top: -14px;
+  padding: 0;
+
+}
+
+.MainProfileInfo {
+  margin-top: -8px;
+}
+
+.ProfileHeading {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Profiletxt {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ContactBtn {
+  font-size: 16px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: #2D3792;
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.ContactBtn:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+
+/* From Uiverse.io by abrahamcalsin */ 
+
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 24px;
+  fill: #2D3792;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #2D3792;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #2D3792;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+.theIcons{
+  color: white;
+  font-size: 24px;
+  padding: 12px;
+  background-color: #2d379256;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.theIcons:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.615);
+  transition: all 0.2s;
+}
+
+.effect3d { animation-name: effect3d }
+@keyframes effect3d {
+    to {
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15)
+    }
+}
+
