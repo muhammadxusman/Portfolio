@@ -28,7 +28,10 @@ export default function Home() {
   };
   return (
     <>
+    <div className="Navbar-Container">
+
       <Navbar />
+    </div>
       <div className="Home_first  d-flex align-items-center justify-content-center">
         <div className="row  container">
           <div className="col-md-6 headHomeTxt d-flex align-items-center justify-content-center">
@@ -174,7 +177,7 @@ export default function Home() {
           </div>
         </div>
       </div >
-      <div className="container mt-5">
+      <div className="container mt-5" id='ABOUTME'>
         <div className="AboutContMain py-5 d-flex justify-content-center">
 
           <div className=" AboutCont d-flex justify-content-center flex-column align-items-center ">
@@ -285,7 +288,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="container-fluid mt-5 technoCont pb-5">
+      <div className="container-fluid mt-5 technoCont pb-5" id='Experience'>
         <div className="container">
           <h2>Experience</h2>
           <div className="">
@@ -458,14 +461,10 @@ export default function Home() {
         </div>
       </div>
 
-
-
-      <div className="spacer">
-
+      <div className="mt-5">
+        <hr />
+        <p className='text-center'>Copyright © 2024 Usman Ali. All Rights Reserved.</p>
       </div>
-
-
-
 
 
     </>

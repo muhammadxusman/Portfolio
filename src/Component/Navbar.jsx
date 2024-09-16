@@ -2,51 +2,51 @@ import React, { useState } from "react";
 import MainLogo from '../../src/assets/mainlogo.png';
 
 export default function Navbar() {
-  const [menuActive, setMenuActive] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
-  const toggleMenu = () => {
-    setMenuActive(!menuActive);
+  const toggleNavbar = () => {
+    setIsCollapsed(!isCollapsed);
   };
 
   return (
-    <div className="navbardiv">
-
-
-      <header className="custom-header">
-        <div className=" container d-flex justify-content-between ">
-
-          <div className="custom-logo">
-            <a href="/"><img className="SItelogo" src={MainLogo} alt="Main Logo" /></a>
-          </div>
-          <div className="custom-hamburger mt-3" onClick={toggleMenu}>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <nav className={`custom-navbar custom-fullscreen ${menuActive ? "custom-active" : "custom-reverse_anim"}`}>
-            <ul>
-              <li style={{ "--animation-order": 1 }}>
-                <a href="/">Home</a>
-              </li>
-              <li style={{ "--animation-order": 2 }}>
-                <a href="/">About</a>
-              </li>
-              <li style={{ "--animation-order": 3 }}>
-                <a href="/">Contact</a>
-              </li>
-              <li style={{ "--animation-order": 4 }}>
-                <a href="/">Services</a>
-              </li>
-              <li style={{ "--animation-order": 5 }}>
-                <a href="/">Blogs</a>
-              </li>
-            </ul>
-            <div className="custom-close" onClick={toggleMenu}>
-              <div></div>
-            </div>
-          </nav>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container">
+        {/* Logo on the left */}
+        <div className="custom-logo">
+          <a href="/"><img className="SItelogo" src={MainLogo} alt="Main Logo" /></a>
         </div>
-      </header>
-    </div>
+
+        {/* Toggler for mobile view */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={toggleNavbar}
+          aria-controls="navbarNav"
+          aria-expanded={!isCollapsed}
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Menu on the right */}
+        <div className={`collapse navbar-collapse ${!isCollapsed ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#ABOUTME">About </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#Experience">Experience  </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#MyProject">Project </a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }

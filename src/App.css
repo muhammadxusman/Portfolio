@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.working {}
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, 0.228) !important;
+  backdrop-filter: blur(20px) !important;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2147483647 !important;
+}
+/* .Navbar-Container{
+  position: sticky;
+  top: 0;
+} */
 
 .WOrkingTxt {
   text-align: center;
@@ -12,14 +25,16 @@
 .SItelogo {
   width: 150px;
 }
-.headHomeTxt p{
+
+.headHomeTxt p {
   color: white;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
 }
-.navbardiv{
-  position:sticky;
+
+.navbardiv {
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 99;
@@ -73,7 +88,7 @@ ul {
 .custom-fullscreen {
   clip-path: circle(0% at 96.5% 4%);
   position: absolute;
-  background: #5F81FD;
+  background: #f2f8f9;
   width: 100%;
   height: 100vh;
   top: 0;
@@ -172,7 +187,8 @@ ul {
   position: relative;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: none; /* Remove the direct background */
+  background: none;
+  /* Remove the direct background */
 }
 
 .technoCont::before {
@@ -184,8 +200,10 @@ ul {
   height: 100%;
   background: url("./assets/Hero.png") no-repeat center bottom;
   background-size: cover;
-  opacity: 0.6; /* Reduce opacity of the background */
-  z-index: -1; /* Place it behind the content */
+  opacity: 0.6;
+  /* Reduce opacity of the background */
+  z-index: -1;
+  /* Place it behind the content */
 }
 
 
@@ -239,7 +257,8 @@ ul {
 
 .txt-grad {
   /* text-decoration: underline; */
-  color: #2D3792;  /* font-style: italic; */
+  color: #2D3792;
+  /* font-style: italic; */
   font-family: "Poppins";
   font-size: 54px;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
@@ -250,6 +269,7 @@ ul {
 }
 
 @keyframes animate {
+
   18.1%,
   20.1%,
   30%,
@@ -518,9 +538,10 @@ ul {
   /* border: 1px solid rgb(53, 53, 53); */
   border-radius: 12px;
   box-shadow: 0px 0px 10px rgb(53 52 53 / 20%);
- 
+
 }
-.AboutBox1:hover{
+
+.AboutBox1:hover {
   box-shadow: none !important;
   border: 1px solid rgb(53, 53, 53);
 }
@@ -538,33 +559,40 @@ ul {
 .AboutBox1inner {
   flex-direction: column;
 }
-.AboutCont p{
+
+.AboutCont p {
   text-align: center;
 }
+
 @media only screen and (max-width: 600px) {
   .ProfilePic {
-   width: 150px;
+    width: 150px;
   }
-  .ProfilePicmain{
-  text-align: center;
+
+  .ProfilePicmain {
+    text-align: center;
   }
-  .alignProfileInfo{
+
+  .alignProfileInfo {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .AboutContMain::before {
     background-position: left;
   }
-  .AboutCont p{
+
+  .AboutCont p {
     text-align: justify;
   }
 }
-.aboutme{
+
+.aboutme {
   position: relative;
 }
 
-.aboutme::before{
+.aboutme::before {
   content: "";
   width: 26px;
   height: 26px;
@@ -577,20 +605,22 @@ ul {
   top: 4px;
 }
 
-.Techlogo{
+.Techlogo {
   width: 100px;
   height: 100px;
 }
-.techskilltxt{
- position: relative; 
- display: block;
- padding: 12px;
- border: 1px solid #2D3792;
- border-radius: 8px;
- background: #2D3792;
- color: white;
+
+.techskilltxt {
+  position: relative;
+  display: block;
+  padding: 12px;
+  border: 1px solid #2D3792;
+  border-radius: 8px;
+  background: #2D3792;
+  color: white;
 }
-.techskilltxt::before{
+
+.techskilltxt::before {
   content: "";
   width: 50px;
   height: 2px;
@@ -600,7 +630,8 @@ ul {
   position: absolute;
   background: #2D3792;
 }
-.techskilltxt::after{
+
+.techskilltxt::after {
   content: "";
   width: 50px;
   height: 2px;
@@ -610,30 +641,34 @@ ul {
   background: #2D3792;
 }
 
-.brainwave{
+.brainwave {
   color: #2D3792;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
-.expComp h4{
+
+.expComp h4 {
   font-size: 24px
 }
 
 @media only screen and (max-width: 600px) {
-  .expComp h4{
+  .expComp h4 {
     font-size: 18px
   }
-  .expComp p{
+
+  .expComp p {
     font-size: 14px;
     font-weight: 500;
   }
-  .ProjectCards{
+
+  .ProjectCards {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
-.intertxt{
+
+.intertxt {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 
@@ -672,7 +707,8 @@ ul {
   font-family: courier, sans;
   transform: rotate(-45deg);
 }
-.FypBox{
+
+.FypBox {
   border: 2px solid #2D3792;
 }
 
@@ -688,7 +724,7 @@ ul {
   z-index: 0;
   overflow: hidden;
   height: 105px;
-  
+
 }
 
 .custom-card1:before {
@@ -727,27 +763,29 @@ ul {
   max-width: 262
 }
 
-.FYPtxt{
+.FYPtxt {
   font-size: 14px;
   font-weight: 600;
 }
 
-.Whatsappicon{
- font-size: 22px; 
+.Whatsappicon {
+  font-size: 22px;
 }
 
-.ancherWhats{
- text-decoration: none; 
- color: #505050;
+.ancherWhats {
+  text-decoration: none;
+  color: #505050;
 }
-.ancherWhats p{
- text-decoration: none; 
- color: #505050;
- font-size: 12px;
- font-weight: 600;
- font-family: "Poppins";
+
+.ancherWhats p {
+  text-decoration: none;
+  color: #505050;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins";
 }
-.my-email{
+
+.my-email {
   font-size: 12px;
   font-weight: 600;
   font-family: "Poppins";
