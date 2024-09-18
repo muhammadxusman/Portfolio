@@ -17,6 +17,9 @@ import pythonFlask from './assets/pythonFlask.png'
 import PhpLaravel from './assets/PhpLaravel.png'
 import resume from './assets/Resume.pdf'
 import ProfilePic from './assets/ProfilePic.jpeg'
+import JavaScript from './assets/javascript.png'
+import Firebase from './assets/Firebase.png'
+import Jquery from './assets/Jquery.png'
 
 export default function Home() {
   const handleDownload = (e) => {
@@ -28,10 +31,10 @@ export default function Home() {
   };
   return (
     <>
-    <div className="Navbar-Container">
+      <div className="Navbar-Container">
 
-      <Navbar />
-    </div>
+        <Navbar />
+      </div>
       <div className="Home_first  d-flex align-items-center justify-content-center">
         <div className="row  container">
           <div className="col-md-6 headHomeTxt d-flex align-items-center justify-content-center">
@@ -116,11 +119,11 @@ export default function Home() {
                     <h5 className='ProfileHeading'>
                       50+
                     </h5>
-                    <p className='Profiletxt'>Project</p>
+                    <p className='Profiletxt'>Projects</p>
                   </div>
                   <div className="">
                     <h5 className='ProfileHeading'>
-                      3 Years +
+                      2 Years +
                     </h5>
                     <p className='Profiletxt'>Experience</p>
                   </div>
@@ -221,71 +224,96 @@ export default function Home() {
 
           </div>
 
-          <div className="row  d-flex gap-3 justify-content-center">
-            <din className="col-md-2 col-sm-2 AboutBox1">
+
+          <div className="row d-flex gap-3 justify-content-center">
+            <div className="col-md-2 col-sm-6 AboutBox2">
               <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo' src={PythonLogo} alt="" />
+                <img className="Techlogo" src={PythonLogo} alt="" />
                 <h6>Python</h6>
               </div>
-            </din>
-            <din className="col-md-2 col-sm-2 AboutBox1">
+            </div>
+            <div className="col-md-2 col-sm-6 AboutBox2">
               <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo' src={Reactlogo} alt="" />
+                <img className="Techlogo" src={Reactlogo} alt="" />
                 <h6>React</h6>
               </div>
-            </din>
-
-            <din className="col-md-2  col-sm-2 AboutBox1">
+            </div>
+            <div className="col-md-2 col-sm-6 AboutBox2">
               <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo' src={NodejsLogo} alt="" />
+                <img className="Techlogo" src={NodejsLogo} alt="" />
                 <h6>Node Js</h6>
               </div>
-            </din>
-            <din className="col-md-2 col-sm-2 AboutBox1">
+            </div>
+            <div className="col-md-2 col-sm-6 AboutBox2">
               <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo pt-3' src={MysqlLogo} alt="" />
-                <h6>My SQL</h6>
-              </div>
-            </din>
-            <din className="col-md-2 col-sm-2 AboutBox1">
-              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo' src={DockerLogo} alt="" />
-                <h6>Docker</h6>
-              </div>
-            </din>
-            <din className="col-md-2 col-sm-2 AboutBox1">
-              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo pt-2' src={Nextjs} alt="" />
-                <h6>Next Js</h6>
-              </div>
-            </din>
-            <din className="col-md-2 col-sm-2 AboutBox1">
-              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo' src={WordpressLogo} alt="" />
-                <h6>WordPress</h6>
-              </div>
-            </din>
-            <din className="col-md-2 col-sm-2 AboutBox1">
-              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo' src={GitHublogo} alt="" />
-                <h6>GitHub</h6>
-              </div>
-            </din>
-            <din className="col-md-2 col-sm-2 AboutBox1">
-              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo pt-2' src={pythonFlask} alt="" />
+                <img className="Techlogo pt-2" src={pythonFlask} alt="" />
                 <h6>Flask</h6>
               </div>
-            </din>
-            <din className="col-md-2 col-sm-2 AboutBox1">
+            </div>
+            <div className="col-md-2 col-sm-6 AboutBox2">
               <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
-                <img className='Techlogo pt-2' src={PhpLaravel} alt="" />
+                <img className="Techlogo pt-2" src={Nextjs} alt="" />
+                <h6>Next Js</h6>
+              </div>
+            </div>
+            <div className="col-md-2 col-sm-6 AboutBox2">
+              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
+                <img className="Techlogo pt-2" src={PhpLaravel} alt="" />
                 <h6>Laravel</h6>
               </div>
-            </din>
+            </div>
+            <div className="col-md-2 col-sm-6 AboutBox2">
+              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
+                <img className="Techlogo pt-2" src={Firebase} alt="" />
+                <h6>Firebase</h6>
+              </div>
+            </div>
+            <div className="col-md-2 col-sm-6 AboutBox2">
+              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
+                <img className="Techlogo pt-2" src={JavaScript} alt="" />
+                <h6>JavaScript</h6>
+              </div>
+            </div>
+            <div className="col-md-2 col-sm-6 AboutBox2">
+              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
+                <img className="Techlogo" src={WordpressLogo} alt="" />
+                <h6>WordPress</h6>
+              </div>
+            </div>
+            <div className="col-md-2 col-sm-6 AboutBox2">
+              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
+                <img className="Techlogo pt-3" src={MysqlLogo} alt="" />
+                <h6>My SQL</h6>
+              </div>
+            </div>
 
+            <div className="col-md-2 col-sm-6 AboutBox2">
+              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
+                <img className="Techlogo" src={DockerLogo} alt="" />
+                <h6>Docker</h6>
+              </div>
+            </div>
+
+
+            <div className="col-md-2 col-sm-6 AboutBox2">
+              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
+                <img className="Techlogo" src={GitHublogo} alt="" />
+                <h6>GitHub</h6>
+              </div>
+            </div>
+
+
+
+
+            <div className="col-md-2 col-sm-6 AboutBox2">
+              <div className="d-flex gap-2 flex-column justify-content-center align-items-center">
+                <img className="Techlogo pt-2" src={Jquery} alt="" />
+                <h6>Jquery</h6>
+              </div>
+            </div>
 
           </div>
+
         </div>
       </div>
       <div className="container-fluid mt-5 technoCont pb-5" id='Experience'>
@@ -358,15 +386,16 @@ export default function Home() {
           <div className="d-flex flex-wrap justify-content-center ProjectCards ">
 
             <div className="custom-card">
-              <a className="custom-card1 FypBox" href="#">
+              <a className="custom-card1 FypBox" href="/fyp-gradio" target="_blank" rel="noopener noreferrer">
                 <p className="custom-small"><span className='FYPtxt'>Final Year Project: </span>Grad.io - University Recommendation System</p>
-                <div className="custom-go-corner" href="#">
+                <div className="custom-go-corner">
                   <div className="custom-go-arrow">→</div>
                 </div>
               </a>
             </div>
+
             <div className="custom-card">
-              <a className="custom-card1" href="#">
+              <a className="custom-card1" target="_blank" rel="noopener noreferrer" href="/vidtrial">
                 <p className="custom-small">Automated and Intelligent System for Google Ads</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
@@ -374,15 +403,15 @@ export default function Home() {
               </a>
             </div>
             <div className="custom-card">
-              <a className="custom-card1" href="#">
-                <p className="custom-small">Developed Shift Management System for a Prominent Firm</p>
+              <a className="custom-card1" href="/fillshift" target="_blank" rel="noopener noreferrer">
+                <p className="custom-small">Developed Advance & Smart Shift Management System</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
               </a>
             </div>
             <div className="custom-card">
-              <a className="custom-card1" href="#">
+              <a className="custom-card1" href="peptidescalculator" target="_blank" rel="noopener noreferrer">
                 <p className="custom-small">Peptides Dosage Calculator Web App.</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
@@ -391,8 +420,16 @@ export default function Home() {
             </div>
 
             <div className="custom-card">
-              <a className="custom-card1" href="#">
+              <a className="custom-card1" href="/dynamic-web-scrapper" target="_blank" rel="noopener noreferrer">
                 <p className="custom-small">Dynamic web scraping from 200 websites using Selenium.</p>
+                <div className="custom-go-corner" href="#">
+                  <div className="custom-go-arrow">→</div>
+                </div>
+              </a>
+            </div>
+            <div className="custom-card">
+              <a className="custom-card1" href="/botanista-gastronovi-api" target="_blank" rel="noopener noreferrer">
+                <p className="custom-small">API Integration for Botanista Cafe & Club.</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
@@ -415,14 +452,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="custom-card">
-              <a className="custom-card1" href="#">
-                <p className="custom-small">API Integration for Botanista Cafe & Club.</p>
-                <div className="custom-go-corner" href="#">
-                  <div className="custom-go-arrow">→</div>
-                </div>
-              </a>
-            </div>
+           
 
 
             <div className="custom-card">

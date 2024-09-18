@@ -11,10 +11,28 @@
   right: 0;
   z-index: 2147483647 !important;
 }
-/* .Navbar-Container{
+
+.Navbar-Container {
   position: sticky;
   top: 0;
-} */
+  z-index: 2147483647 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .txt-grad {
+    font-size: 45px !important;
+  }
+
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
 
 .WOrkingTxt {
   text-align: center;
@@ -541,6 +559,20 @@ ul {
 
 }
 
+@media only screen and (max-width: 500px) {
+  .AboutBox2 {
+    width: 140px !important;
+  }
+}
+
+.AboutBox2 {
+  width: 250px;
+  height: 150px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgb(53 52 53 / 20%);
+
+}
+
 .AboutBox1:hover {
   box-shadow: none !important;
   border: 1px solid rgb(53, 53, 53);
@@ -789,4 +821,61 @@ ul {
   font-size: 12px;
   font-weight: 600;
   font-family: "Poppins";
+}
+
+.Project-Main-Cont {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Project-container {
+  width: 80%;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 30px
+}
+
+.ProjectProfile {
+  width: 200px;
+ 
+}
+
+.red {
+  border: 1px solid red;
+}
+
+.projectColumn1 {
+  border-right: 2px solid rgba(255, 255, 255, 0.8);
+}
+@media only screen and (max-width: 500px) {
+  .projectColumn1 {
+    border-right: unset !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  }
+  .Project-Detai-container{
+    padding-top: 24px;
+  }
+}
+
+.ContactBtn2 {
+  font-size: 16px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  will-change: box-shadow, transform;
+  background: #676975;
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  cursor: not-allowed !important;
+}
+#peptidelogo{
+  width: 100px;
 }

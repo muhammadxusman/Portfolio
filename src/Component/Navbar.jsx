@@ -32,16 +32,16 @@ export default function Navbar() {
         <div className={`collapse navbar-collapse ${!isCollapsed ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              <a className="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#ABOUTME">About </a>
+              <a className="nav-link" href="/#ABOUTME">About </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#Experience">Experience  </a>
+              <a className="nav-link" href="/#Experience">Experience  </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#MyProject">Project </a>
+              <a className="nav-link" href="/#MyProject">Project </a>
             </li>
            
           </ul>
