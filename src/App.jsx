@@ -8,6 +8,7 @@ import Project4 from './Projects/Project4';
 import Project5 from './Projects/Project5';
 import Project6 from './Projects/Project6';
 import Project7 from './Projects/Project7';
+import Project8 from './Projects/Project8';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/dynamic-web-scrapper" element={<Project5 />} />
         <Route path="/botanista-gastronovi-api" element={<Project6 />} />
         <Route path="/botanista-gastronovi-api" element={<Project7 />} />
+        <Route path="/Antiaging-solution" element={<Project8 />} />
 
       </Routes>
     </Router>

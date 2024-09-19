@@ -480,7 +480,7 @@ export default function Home() {
               </a>
             </div>
             <div className="custom-card">
-              <a className="custom-card1" href="#">
+              <a className="custom-card1" href="/Antiaging-solution" target="_blank" rel="noopener noreferrer">
                 <p className="custom-small">WordPress E-Commerce Store: AntiagingSolution.co</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
