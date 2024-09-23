@@ -8,8 +8,12 @@ import Project4 from './Projects/Project4';
 import Project5 from './Projects/Project5';
 import Project6 from './Projects/Project6';
 import Project7 from './Projects/Project7';
-import Project8 from './Projects/Project8';
-
+import Project8 from './Projects/project8';
+import Project9 from './Projects/Project9';
+import Project10 from './Projects/Project10';
+import Project11 from './Projects/Project11';
+import Project12 from './Projects/Project12';
+import ProjectAll from './Projects/ProjectAll';
 function App() {
 
 
@@ -26,6 +30,11 @@ function App() {
         <Route path="/botanista-gastronovi-api" element={<Project6 />} />
         <Route path="/botanista-gastronovi-api" element={<Project7 />} />
         <Route path="/Antiaging-solution" element={<Project8 />} />
+        <Route path="/all-projects" element={<ProjectAll />} />
+        <Route path="/the-louder-milks" element={<Project9 />} />
+        <Route path="/dcelectricservice" element={<Project11 />} />
+        <Route path="/cyberunicorn" element={<Project10 />} />
+        <Route path="/prestigeautobodycampbell" element={<Project12 />} />
 
       </Routes>
     </Router>

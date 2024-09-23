@@ -396,7 +396,7 @@ export default function Home() {
 
             <div className="custom-card">
               <a className="custom-card1" target="_blank" rel="noopener noreferrer" href="/vidtrial">
-                <p className="custom-small">Automated and Intelligent System for Google Ads</p>
+                <p className="custom-small"><span className='FYPtxt'>Vidtrial </span>- Automated and Intelligent System for Google Ads</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
@@ -404,7 +404,7 @@ export default function Home() {
             </div>
             <div className="custom-card">
               <a className="custom-card1" href="/fillshift" target="_blank" rel="noopener noreferrer">
-                <p className="custom-small">Developed Advance & Smart Shift Management System</p>
+                <p className="custom-small"><span className='FYPtxt'>Fillshift </span>- Advance & Smart Shift Management System</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
@@ -412,7 +412,7 @@ export default function Home() {
             </div>
             <div className="custom-card">
               <a className="custom-card1" href="peptidescalculator" target="_blank" rel="noopener noreferrer">
-                <p className="custom-small">Peptides Dosage Calculator Web App.</p>
+                <p className="custom-small"><span className='FYPtxt'>Peptides Dosage Calculator Web App. </span></p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
@@ -429,68 +429,66 @@ export default function Home() {
             </div>
             <div className="custom-card">
               <a className="custom-card1" href="/botanista-gastronovi-api" target="_blank" rel="noopener noreferrer">
-                <p className="custom-small">API Integration for Botanista Cafe & Club.</p>
+                <p className="custom-small"><span className='FYPtxt'>Botanista Cafe & Club</span> - Integration API for handling complex menu.</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
               </a>
             </div>
             <div className="custom-card">
-              <a className="custom-card1" href="#">
-                <p className="custom-small"> Automobile sell and purchase web app on Php Laravel</p>
+              <a className="custom-card1" href="/prestigeautobodycampbell" target="_blank" rel="noopener noreferrer">
+                <p className="custom-small"><span className='FYPtxt'>Prestige Automotive</span> - Automobile website </p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
               </a>
             </div>
             <div className="custom-card">
-              <a className="custom-card1" href="#">
-                <p className="custom-small">Learning Management System using LearnPress</p>
+              <a className="custom-card1" href="/cyberunicorn" target="_blank" rel="noopener noreferrer">
+                <p className="custom-small"><span className='FYPtxt'>Cyber Unicorn</span> - Learning Management System.</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
               </a>
             </div>
 
-           
-
-
             <div className="custom-card">
-              <a className="custom-card1" href="#">
-                <p className="custom-small">Developed and customized an e-commerce store for ticket booking.</p>
+              <a className="custom-card1" href="/the-louder-milks" target="_blank" rel="noopener noreferrer">
+                <p className="custom-small"><span className='FYPtxt'>TheLouderMilks</span> - Music selling E-Commerce website.</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
               </a>
             </div>
             <div className="custom-card">
-              <a className="custom-card1" href="#">
-                <p className="custom-small">Built a website on GoHighLevel to run automation processes.</p>
+              <a className="custom-card1" href="/dcelectricservice" target="_blank" rel="noopener noreferrer">
+                <p className="custom-small"><span className='FYPtxt'>DC Electric</span> - Develop a portfolio website.</p>
                 <div className="custom-go-corner" href="#">
-                  <div className="custom-go-arrow">→</div>
-                </div>
-              </a>
-            </div>
-            <div className="custom-card">
-              <a className="custom-card1" href="#">
-                <p className="custom-small">Recipe-sharing web app using Laravel with Google auth and IP restrictions.</p>
-                <div className="custom-go-corner" href="#">
-                  <div className="custom-go-arrow">→</div>
+                  <div className="custom-go-arrow">→</div>                        
                 </div>
               </a>
             </div>
             <div className="custom-card">
               <a className="custom-card1" href="/Antiaging-solution" target="_blank" rel="noopener noreferrer">
-                <p className="custom-small">WordPress E-Commerce Store: AntiagingSolution.co</p>
+                <p className="custom-small"><span className='FYPtxt'>AntiagingSolution</span> - Ecommerce website for beauty and health care.</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
               </a>
             </div>
+            <div className="custom-card">
+              <a className="custom-card1" href="/all-projects" target="_blank" rel="noopener noreferrer">
+                <p className="custom-small">List of all my other projects which I delivered to clients</p>
+                <div className="custom-go-corner" href="#">
+                  <div className="custom-go-arrow">→</div>
+                </div>
+              </a>
+            </div>
+            
           </div>
         </div>
       </div>
-
+  
       <div className="mt-5">
         <hr />
         <p className='text-center'>Copyright © 2024 Usman Ali. All Rights Reserved.</p>

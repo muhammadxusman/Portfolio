@@ -35,13 +35,13 @@ export default function Navbar() {
               <a className="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#ABOUTME">About </a>
+              <a className="nav-link" href="https://usmanalitech.com/#ABOUTME">About </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#Experience">Experience  </a>
+              <a className="nav-link" href="https://usmanalitech.com/#Experience">Experience  </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#MyProject">Project </a>
+              <a className="nav-link" href="https://usmanalitech.com/#MyProject">Project </a>
             </li>
            
           </ul>
