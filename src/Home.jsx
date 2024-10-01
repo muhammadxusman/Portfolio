@@ -421,12 +421,13 @@ export default function Home() {
 
             <div className="custom-card">
               <a className="custom-card1" href="/dynamic-web-scrapper" target="_blank" rel="noopener noreferrer">
-                <p className="custom-small">Dynamic web scraping from 200 websites using Selenium.</p>
+                <p className="custom-small"><span className='FYPtxt'>Dynamic web scraping</span> - to scrape data from multiple sites simultaneously</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
               </a>
             </div>
+
             <div className="custom-card">
               <a className="custom-card1" href="/botanista-gastronovi-api" target="_blank" rel="noopener noreferrer">
                 <p className="custom-small"><span className='FYPtxt'>Botanista Cafe & Club</span> - Integration API for handling complex menu.</p>
@@ -435,6 +436,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
+
             <div className="custom-card">
               <a className="custom-card1" href="/prestigeautobodycampbell" target="_blank" rel="noopener noreferrer">
                 <p className="custom-small"><span className='FYPtxt'>Prestige Automotive</span> - Automobile website </p>
@@ -443,6 +445,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
+
             <div className="custom-card">
               <a className="custom-card1" href="/cyberunicorn" target="_blank" rel="noopener noreferrer">
                 <p className="custom-small"><span className='FYPtxt'>Cyber Unicorn</span> - Learning Management System.</p>
@@ -460,6 +463,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
+
             <div className="custom-card">
               <a className="custom-card1" href="/dcelectricservice" target="_blank" rel="noopener noreferrer">
                 <p className="custom-small"><span className='FYPtxt'>DC Electric</span> - Develop a portfolio website.</p>
@@ -468,6 +472,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
+
             <div className="custom-card">
               <a className="custom-card1" href="/Antiaging-solution" target="_blank" rel="noopener noreferrer">
                 <p className="custom-small"><span className='FYPtxt'>AntiagingSolution</span> - Ecommerce website for beauty and health care.</p>
@@ -476,9 +481,10 @@ export default function Home() {
                 </div>
               </a>
             </div>
+
             <div className="custom-card">
               <a className="custom-card1" href="/all-projects" target="_blank" rel="noopener noreferrer">
-                <p className="custom-small">List of all my other projects which I delivered to clients</p>
+                <p className="custom-small"><span className='FYPtxt'>All other website </span> which I delivered to clients</p>
                 <div className="custom-go-corner" href="#">
                   <div className="custom-go-arrow">→</div>
                 </div>
